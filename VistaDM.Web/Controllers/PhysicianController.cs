@@ -188,8 +188,8 @@ namespace VistaDM.Web.Controllers
                                         inv.PhoneNumber,
                                         inv.FaxNumber,
                                         inv.RegCode,
-                                        check ? 1 : 0 ,
-                                        check2 ? 1 : 0  
+                                        check ? 1 : 0,
+                                        check2 ? 1 : 0
                         );
 
                     //send email
@@ -361,9 +361,15 @@ namespace VistaDM.Web.Controllers
             return user;
         }
 
-        #endregion 
+        #endregion
 
         #region Assesment Survey
+
+        [Authorize]
+        public ActionResult AssesmentSurvey()
+        {
+            return View();
+        }
 
         [Authorize]
         public ActionResult Assesment()

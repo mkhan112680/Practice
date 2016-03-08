@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -223,6 +224,18 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\App.js" />
+    <Content Include="App\AssesmentSurvey\App.js" />
+    <Content Include="App\AssesmentSurvey\Controllers\RootCntrl.js" />
+    <Content Include="App\AssesmentSurvey\Controllers\Screen1Controller.js" />
+    <Content Include="App\AssesmentSurvey\Controllers\Screen2Controller.js" />
+    <Content Include="App\AssesmentSurvey\Controllers\Screen3Controller.js" />
+    <Content Include="App\AssesmentSurvey\Controllers\Screen4Controller.js" />
+    <Content Include="App\AssesmentSurvey\Partials\Root.html" />
+    <Content Include="App\AssesmentSurvey\Partials\Screen1.html" />
+    <Content Include="App\AssesmentSurvey\Partials\Screen2.html" />
+    <Content Include="App\AssesmentSurvey\Partials\Screen3.html" />
+    <Content Include="App\AssesmentSurvey\Partials\Screen4.html" />
     <Content Include="Content\body.css" />
     <Content Include="Content\bootstrap-mvc-validation.css" />
     <Content Include="Content\bootstrap-responsive.css" />
@@ -520,6 +533,11 @@
     <Content Include="images\tickboxes.png" />
     <Content Include="images\VistaDM_logo.png" />
     <Content Include="images\x.png" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="images\ais\AdobeStock_56550091 [Converted].ai" />
@@ -572,6 +590,8 @@
     <Content Include="pdf\NEXT SCHEDULED VISIT DATE LOG.pdf" />
     <Content Include="pdf\e-PAF 1 Instructions.pdf" />
     <None Include="Properties\PublishProfiles\New.pubxml" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <Content Include="Scripts\angular-route.min.js.map" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\html5shiv.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -672,6 +692,7 @@
     <Content Include="Views\Shared\_validationSummary.cshtml" />
     <Content Include="Views\Physician\Instructions.cshtml" />
     <Content Include="Views\Physician\FeedbackSummary.cshtml" />
+    <Content Include="Views\Physician\AssesmentSurvey.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

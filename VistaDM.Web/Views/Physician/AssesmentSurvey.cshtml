@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "~/Views/Shared/_Vista_Layout.cshtml";
+}
+<script src="~/Scripts/_references.js"></script>
+@section scripts {
+    <script src="~/App/AssesmentSurvey/App.js"></script>
+    <script src="~/App/AssesmentSurvey/Controllers/RootCntrl.js"></script>
+    <script src="~/App/AssesmentSurvey/Controllers/Screen1Controller.js"></script>
+    <script src="~/App/AssesmentSurvey/Controllers/Screen2Controller.js"></script>
+    <script src="~/App/AssesmentSurvey/Controllers/Screen3Controller.js"></script>
+    <script src="~/App/AssesmentSurvey/Controllers/Screen4Controller.js"></script>
+}
+
+@section jsCode {
+
+    <script type="text/javascript">
+        angular.bootstrap(document.getElementById('divAssesment'), ['AssesmentSurvey']);
+    </script>
+}
+
+<div ng-non-bindable>
+
+    <div id="divAssesment" ng-controller="RootCntrl">
+
+        <a ng-href="#Screen1">1</a>
+        <a ng-href="#Screen2">2</a>
+        <a ng-href="#Screen3">3</a>
+        <a ng-href="#Screen4">4</a>
+
+        <div ng-view></div>
+
+    </div>
+</div>
